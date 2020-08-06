@@ -1,3 +1,3 @@
-# Plataforma de Estudo
- é uma plataforma site e app que você pode tanto assistir aulas quanto dar aulas.
-        EM CONSTRUÇÃO!!!
+<h1 align="center">Plataforma de Estudo</h1>
+<p align="center">Sistema Web para alunos e professores se conectarem e realizarem suas aulas.
+ Projeto desenvolvido durante a semana <strong>NLW - Next Level Week#2</strong> oferecida pela Rocketseat</p>
