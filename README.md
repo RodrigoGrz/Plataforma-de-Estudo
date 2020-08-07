@@ -10,6 +10,7 @@
           
 <h2>Sobre o Projeto</h2>
 <br><img src="https://github.com/adryan30/proffy/raw/master/assets/landing.png"/>
+<p align="center"><img src="https://img.shields.io/badge/build-Em%20Desenvolvimento-yellow"/>  
 <p>Hoje em dia a maioria das pessoas conseguem aprender o que quiser pela internet, sem nem sair de casa. Esse projeto traz exatamente isso, aonde quem quiser assistir aulas online podem, e aqueles que já tem o conhecimento consegue passar a outros por meio das aulas./p>
 <p>No botão <strong>Estudar</strong> os aulas podem entrar e procurar a aula desejada.</p>
 <p>No botão <strong>Dar aula</strong> o professor pode se cadastrar para dar suas aulas.</p>
@@ -21,6 +22,10 @@
 <br/><a href="https://git-scm.com/" rel"nofollow">Git</a>
 
 <h2>Contribuição</h2>
+<p>Podem ficar a vontade para melhorarem, o projeto <strong>não</strong> esta finalizado.</p>
+<br/>A parte do banco de dados precisa ser ajustada na hora do cadastro.
+
+<h2>Autor</h2>
 <p><strong>Rodrigo Grzegorczyk</strong></p>
 <img src="https://img.shields.io/badge/LinkedIn-Rodrigo%20Grzegorczyk-blue"/>
 
