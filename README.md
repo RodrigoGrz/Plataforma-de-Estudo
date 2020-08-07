@@ -18,4 +18,8 @@
 <p>Tecnologias que foram usadas no projeto:</p>
 <a href="https://code.visualstudio.com/" rel"nofollow">VSCode</a>
 <br/><a href="https://nodejs.org/en/download/" rel"nofollow">Node Js</a>
+<br/><a href="https://git-scm.com/" rel"nofollow">Git</a>
 
+<h2>Contato</h2>
+<p><strong>Rodrigo Grzegorczyk</strong></p>
+<img src="https://img.shields.io/badge/LinkedIn-Rodrigo%20Grzegorczyk-blue"/>
