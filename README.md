@@ -20,6 +20,12 @@
 <br/><a href="https://nodejs.org/en/download/" rel"nofollow">Node Js</a>
 <br/><a href="https://git-scm.com/" rel"nofollow">Git</a>
 
-<h2>Contato</h2>
+<h2>Contribuição</h2>
 <p><strong>Rodrigo Grzegorczyk</strong></p>
 <img src="https://img.shields.io/badge/LinkedIn-Rodrigo%20Grzegorczyk-blue"/>
+
+Link do Projeto: https://github.com/RodrigoGrz/Plataforma-de-Estudo
+
+
+<h2>Reconhecimento</h2>
+<p>Todos os direitos sobre design gráfico, imagens e API são atribuidos ao pessoal da <a href="https://github.com/Rocketseat" rel"nofollow">Rocketseat</a></p>
