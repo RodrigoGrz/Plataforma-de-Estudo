@@ -20,7 +20,7 @@ async function pageStudy(req, res) {
         SELECT classes.*, proffys.*
         FROM proffys
         JOIN classes ON (classes.proffy_id = proffys.id)
-        WHERE EXISTS(
+        WHERE EXISTS (
             SELECT class_schedule.*
             FROM class_schedule 
             WHERE class_schedule.class_id = classes.id
@@ -36,6 +36,10 @@ async function pageStudy(req, res) {
             const db = await Database
             const proffys = await db.all(query)
 
+            proffys.map((proffy) => {
+                proffy.subject = getSubject(proffy.subject)
+                })
+
             return res.render('study.html', { proffys, subjects, filters, weekdays })
 
         } catch (error) {
@@ -50,9 +54,9 @@ function pageGiveClasses(req, res) {
 }
 
 async function saveClasses(req, res) {
-    const createProffy = require('.datebase/createProffy')
+    const createProffy = require('./database/createProffy')
 
-    const proffyValues = {
+    const proffyValue = {
         name: req.body.name,
         avatar: req.body.avatar,
         whatsapp: req.body.whatsapp,
@@ -70,24 +74,18 @@ async function saveClasses(req, res) {
                 time_from: convertHoursToMinutes(req.body.time_from[index]),
                 time_to: convertHoursToMinutes(req.body.time_from[index])
             }
-
         })
         
         try {
             const db = await Database
-            await createProffy(db, { proffyValues, classValue, classScheduleValues })
+            await createProffy(db, { proffyValue, classValue, classScheduleValues })
 
             let queryString = "?subject=" + req.body.subject
             queryString += "&weekday=" + req.body.weekday[0]
             queryString += "&time=" + req.body.time_from[0]
             
             return res.redirect("/study" + queryString)
-            /*const proffys = await db.all(query)
-            
-            proffys.map((proffy) => {
-            proffy.subject = getSubject(proffy.subject)
-            })
-            */
+          
         } catch (error) {
             console.log(error)
         }     
